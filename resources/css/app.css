@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* Sidebar */
+    .sidebar-link {
+        @apply flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200;
+    }
+
+    .sidebar-link-inactive {
+        @apply text-indigo-200 hover:bg-white/10 hover:text-white;
+    }
+
+    .sidebar-link-active {
+        @apply bg-white text-indigo-700 shadow-md font-semibold;
+    }
+
+    /* Cards */
+    .card {
+        @apply bg-white rounded-2xl shadow-sm border border-gray-100;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        @apply inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm text-sm;
+    }
+
+    .btn-success {
+        @apply inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm text-sm;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm text-sm;
+    }
+
+    .btn-gray {
+        @apply inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 text-sm;
+    }
+
+    .btn-sm {
+        @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200;
+    }
+
+    /* Form inputs */
+    .input-field {
+        @apply w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all;
+    }
+
+    /* Badges */
+    .badge {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+    }
+
+    .badge-green {
+        @apply badge bg-emerald-100 text-emerald-800;
+    }
+
+    .badge-red {
+        @apply badge bg-red-100 text-red-800;
+    }
+
+    .badge-yellow {
+        @apply badge bg-amber-100 text-amber-800;
+    }
+
+    .badge-blue {
+        @apply badge bg-blue-100 text-blue-800;
+    }
+
+    .badge-purple {
+        @apply badge bg-purple-100 text-purple-800;
+    }
+
+    .badge-gray {
+        @apply badge bg-gray-100 text-gray-700;
+    }
+
+    /* Table */
+    .table-header {
+        @apply px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50;
+    }
+
+    .table-cell {
+        @apply px-4 py-3 text-sm text-gray-700;
+    }
+
+    .table-row {
+        @apply border-b border-gray-100 hover:bg-gray-50 transition-colors;
+    }
+}
